@@ -16,7 +16,7 @@ int main()
     cout << endl << "Leider falsch geraten. Versuche es noch einmal. Du hast noch " << --tries << " Versuche offen." << endl;
     cout << sug() << endl;
   }
-  if(tries > 0)
+  if(tries > 1)
   {
     cout << "Richtig erraten! Ich habe an die Zahl " << ranm << " gedacht." << endl;
   }
