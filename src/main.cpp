@@ -1,6 +1,7 @@
 #include "game.h"
 
 
+
 int main()
 {
 
@@ -8,21 +9,20 @@ int main()
   string user=usin();
   user=check_user(user);
   int tries = 7;
-  cout << endl << "Hallo " << user << "." << endl <<"Erate die Zahl, die ich mir zwischen 1 & 100 ausgedacht habe. Du hast " << tries << " Versuche offen." << endl << endl;
+  cout << endl << "Hallo " << user << "." << endl <<"Errate die Zahl, die ich mir zwischen 1 & 100 ausgedacht habe. Du hast " << tries << " Versuche offen." << endl << endl;
   int ranm=creaternb();
   while((usin() != to_string(ranm)) && (tries > 1))
   {
-    tries= tries - 1;
-    cout << "Leider falsch gerate, versuche es noch einmal, du hast noch " << tries << " Versuche offen." << endl;
+    cout << endl << "Leider falsch geraten. Versuche es noch einmal. Du hast noch " << --tries << " Versuche offen." << endl;
     cout << sug() << endl;
   }
-  if(tries > 1)
+  if(tries > 0)
   {
-    cout << "Richtig eraten! Ich habe an die Zahl " << ranm << " gedacht." << endl;
+    cout << "Richtig erraten! Ich habe an die Zahl " << ranm << " gedacht." << endl;
   }
   else
   {
-    cout << "Schade ich hatte an die Zahl " << ranm << " gedacht. Versuche es ruhig noch einmal" << endl;
+    cout << "Schade ich hatte an die Zahl " << ranm << " gedacht. Versuche es ruhig noch einmal." << endl;
   }
 
   
