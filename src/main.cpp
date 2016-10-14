@@ -5,7 +5,7 @@
 int main()
 {
 
-  cout << "Hello friendly user, what is your name?";
+  cout << "Hello friendly user, what is your name?" << endl;
   string user=usin();
   user=check_user(user);
   int tries = 7;
