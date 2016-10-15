@@ -5,7 +5,11 @@
 
 
 using namespace std;
-string check_user(string us);
-string usin();
-int creaternb();
-string sug();
+class game{
+  public:
+  string check_user(string us);
+  string usin();
+  int creaternb();
+  string sug();
+  void run();
+};
