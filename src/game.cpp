@@ -40,7 +40,6 @@ string game::sug()
 
 void game::game_end()
 {
-  cout << tries;
   if(tries >= 1)
   { cout << "Richtig erraten! Ich habe an die Zahl " << ranm << " gedacht." << endl;
   }
