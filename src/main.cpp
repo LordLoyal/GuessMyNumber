@@ -8,6 +8,7 @@ int main()
   if(g)
   {
     g->run();
+    delete g;
   }
   
   return 0;
